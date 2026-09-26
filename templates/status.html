@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Application Status</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Application Status</h1>
+
+        <p class="welcome">
+            Check your scholarship application status
+        </p>
+
+
+        <div class="status-box">
+
+            <h2>Application Details</h2>
+
+            <p>
+                <b>Student ID:</b> STU001
+            </p>
+
+            <p>
+                <b>Scholarship:</b> Merit Scholarship
+            </p>
+
+            <p>
+                <b>Status:</b> Pending
+            </p>
+
+            <p>
+                Your application is currently under review.
+            </p>
+
+        </div>
+
+
+        <br><br>
+
+
+        <div class="menu">
+
+            <a href="/" class="menu-button">
+                Home
+            </a>
+
+            <a href="/scholarships" class="menu-button">
+                Scholarship List
+            </a>
+
+            <a href="/profile" class="menu-button">
+                Student Profile
+            </a>
+
+            <a href="/documents" class="menu-button">
+                Documents
+            </a>
+
+            <a href="/application" class="menu-button">
+                Application
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
