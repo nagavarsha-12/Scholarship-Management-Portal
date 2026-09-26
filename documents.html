@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document Details</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Document Details</h1>
+
+        <p class="welcome">
+            Upload Required Documents
+        </p>
+
+        <form>
+
+            <div class="form-box">
+
+                <label>Aadhaar Card</label>
+                <input type="file" name="aadhaar">
+
+                <label>Income Certificate</label>
+                <input type="file" name="income_certificate">
+
+                <label>Caste Certificate</label>
+                <input type="file" name="caste_certificate">
+
+                <label>Marks Memo</label>
+                <input type="file" name="marks_memo">
+
+                <label>Bank Passbook</label>
+                <input type="file" name="bank_passbook">
+
+                <button type="submit" class="upload-button">
+                    Upload Documents
+                </button>
+
+            </div>
+
+        </form>
+
+        <br>
+
+        <a href="/" class="back-button">
+            Back to Home
+        </a>
+
+    </div>
+
+</body>
+
+</html>

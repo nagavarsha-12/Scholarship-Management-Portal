@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Scholarship Application</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Scholarship Application</h1>
+
+        <p class="welcome">
+            Fill in the details to apply for a scholarship
+        </p>
+
+        <form method="POST" action="/application">
+
+            <div class="form-box">
+
+                <label>Student ID</label>
+                <input type="text"
+                       name="student_id"
+                       placeholder="Enter Student ID"
+                       required>
+
+                <label>Scholarship</label>
+                <select name="scholarship" required>
+
+                    <option value="">
+                        Select Scholarship
+                    </option>
+
+                    <option value="Merit Scholarship">
+                        Merit Scholarship
+                    </option>
+
+                    <option value="Post Matric Scholarship">
+                        Post Matric Scholarship
+                    </option>
+
+                </select>
+
+
+                <label>Academic Score</label>
+
+                <input type="text"
+                       name="academic_score"
+                       placeholder="Enter Percentage / CGPA"
+                       required>
+
+
+                <label>Family Income</label>
+
+                <input type="text"
+                       name="income"
+                       placeholder="Enter Family Income"
+                       required>
+
+
+                <label>Category</label>
+
+                <select name="category" required>
+
+                    <option value="">
+                        Select Category
+                    </option>
+
+                    <option value="General">
+                        General
+                    </option>
+
+                    <option value="OBC">
+                        OBC
+                    </option>
+
+                    <option value="SC">
+                        SC
+                    </option>
+
+                    <option value="ST">
+                        ST
+                    </option>
+
+                </select>
+
+
+                <button type="submit"
+                        class="upload-button">
+
+                    Submit Application
+
+                </button>
+
+            </div>
+
+        </form>
+
+        <br>
+
+        <a href="/" class="back-button">
+            Back to Home
+        </a>
+
+    </div>
+
+</body>
+
+</html>

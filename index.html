@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Scholarship Management Portal</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <div class="logo">
+                🎓 Scholarship Portal
+            </div>
+
+            <div class="nav-links">
+
+                <a href="/" class="active">
+                    Home
+                </a>
+
+                <a href="/scholarships">
+                    Scholarships
+                </a>
+
+                <a href="/eligibility">
+                    Eligibility
+                </a>
+
+                <a href="/application">
+                    Apply
+                </a>
+
+                <a href="/status">
+                    Status
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main Content -->
+
+    <main class="dashboard">
+
+        <!-- Welcome Section -->
+
+        <section class="hero-section">
+
+            <div class="hero-content">
+
+                <p class="hero-tag">
+                    STUDENT SCHOLARSHIP PORTAL
+                </p>
+
+                <h1>
+                    Find the Right Scholarship
+                    <span>for Your Future</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore scholarships, check eligibility,
+                    manage your profile, submit applications,
+                    and track your application status in one place.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="/scholarships"
+                       class="primary-button">
+                        Explore Scholarships
+                    </a>
+
+                    <a href="/application"
+                       class="secondary-button">
+                        Apply Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="graduation-icon">
+                    🎓
+                </div>
+
+                <h2>
+                    Your Education,
+                    <br>
+                    Your Opportunity
+                </h2>
+
+                <p>
+                    Discover financial support
+                    for your academic journey.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Dashboard Statistics -->
+
+        <section class="stats-section">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🎓
+                </div>
+
+                <div>
+                    <h3>4</h3>
+                    <p>Scholarships</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📋
+                </div>
+
+                <div>
+                    <h3>1</h3>
+                    <p>Application</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📄
+                </div>
+
+                <div>
+                    <h3>5</h3>
+                    <p>Documents</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🔍
+                </div>
+
+                <div>
+                    <h3>24/7</h3>
+                    <p>Access</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Services -->
+
+        <section class="services-section">
+
+            <div class="section-heading">
+
+                <p>
+                    PORTAL SERVICES
+                </p>
+
+                <h2>
+                    Manage Your Scholarship Journey
+                </h2>
+
+            </div>
+
+
+            <div class="service-grid">
+
+
+                <!-- Scholarship -->
+
+                <a href="/scholarships"
+                   class="service-card">
+
+                    <div class="service-icon">
+                        🎓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Scholarship List
+                        </h3>
+
+                        <p>
+                            View available scholarships,
+                            amounts and deadlines.
+                        </p>
+
+                    </div>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- Eligibility -->
+
+                <a href="/eligibility"
+                   class="service-card">
+
+                    <div class="service-icon">
+                        ✅
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Eligibility Criteria
+                        </h3>
+
+                        <p>
+                            Check academic, income
+                            and document requirements.
+                        </p>
+
+                    </div>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- Profile -->
+
+                <a href="/profile"
+                   class="service-card">
+
+                    <div class="service-icon">
+                        👤
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Student Profile
+                        </h3>
+
+                        <p>
+                            Add and manage your
+                            personal and academic details.
+                        </p>
+
+                    </div>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- Documents -->
+
+                <a href="/documents"
+                   class="service-card">
+
+                    <div class="service-icon">
+                        📁
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Documents
+                        </h3>
+
+                        <p>
+                            Upload and manage
+                            required scholarship documents.
+                        </p>
+
+                    </div>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- Application -->
+
+                <a href="/application"
+                   class="service-card">
+
+                    <div class="service-icon">
+                        📝
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Scholarship Application
+                        </h3>
+
+                        <p>
+                            Submit your scholarship
+                            application online.
+                        </p>
+
+                    </div>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- Status -->
+
+                <a href="/status"
+                   class="service-card">
+
+                    <div class="service-icon">
+                        📊
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Application Status
+                        </h3>
+
+                        <p>
+                            Track your scholarship
+                            application progress.
+                        </p>
+
+                    </div>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- How It Works -->
+
+        <section class="workflow-section">
+
+            <div class="section-heading">
+
+                <p>
+                    SIMPLE PROCESS
+                </p>
+
+                <h2>
+                    How It Works
+                </h2>
+
+            </div>
+
+
+            <div class="workflow">
+
+                <div class="workflow-step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Find Scholarship
+                    </h3>
+
+                    <p>
+                        Explore available
+                        scholarship opportunities.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-line"></div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Check Eligibility
+                    </h3>
+
+                    <p>
+                        Verify whether you
+                        meet the requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-line"></div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Submit Application
+                    </h3>
+
+                    <p>
+                        Provide details and
+                        submit your application.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-line"></div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Track Status
+                    </h3>
+
+                    <p>
+                        Monitor your application
+                        progress.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Scholarship Management Portal
+        </p>
+
+        <p>
+            Student Scholarship Management System
+        </p>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Eligibility Criteria</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Eligibility Criteria</h1>
+
+        <p class="welcome">
+            Check the requirements before applying for a scholarship
+        </p>
+
+
+        <div class="status-box">
+
+            <h2>General Eligibility</h2>
+
+            <p>
+                <b>Education:</b>
+                Student must be currently studying in an educational institution.
+            </p>
+
+            <p>
+                <b>Academic Performance:</b>
+                Student should meet the required academic percentage.
+            </p>
+
+            <p>
+                <b>Family Income:</b>
+                Student should satisfy the applicable income criteria.
+            </p>
+
+            <p>
+                <b>Documents:</b>
+                Required documents must be available.
+            </p>
+
+            <p>
+                <b>Application Date:</b>
+                Student must submit the application before the last date.
+            </p>
+
+        </div>
+
+
+        <br><br>
+
+
+        <div class="menu">
+
+            <a href="/application" class="menu-button">
+                Apply Now
+            </a>
+
+            <a href="/" class="menu-button">
+                Home
+            </a>
+
+            <a href="/scholarships" class="menu-button">
+                Scholarship List
+            </a>
+
+            <a href="/profile" class="menu-button">
+                Student Profile
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
