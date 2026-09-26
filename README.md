@@ -48,3 +48,26 @@ Scholarship-Management-Portal
 
 5. Open this link in Chrome:
    http://127.0.0.1:5000
+
+
+
+
+## Screenshots
+
+### Home Page
+![Home Page](home.png)
+
+### Scholarship List
+![Scholarship List](scholarships.png)
+
+### Student Profile
+![Student Profile](profile.png)
+
+### Documents
+![Documents](documents.png)
+
+### Application
+![Application](application.png)
+
+### Application Status
+![Application Status](status.png)
